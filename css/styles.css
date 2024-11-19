@@ -1,25 +1,21 @@
 body {
   width: auto;
   height: auto;
-}
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
+  font-family: cursive;
+  color: whitesmoke;
 }
 h1 {
-  font-size: larger;
+  font: 900;
+  font-size: xx-large;
 }
-fieldset {
-  background-color: whitesmoke;
-  border-radius: 100%;
+h1:hover {
+  animation: h1Hover 5s infinite ease-in-out;
+  color: greenyellow;
 }
 
-img {
-  width: 150px;
-  height: 150px;
-  float: right;
-  margin-left: 30px;
+fieldset {
+  border-radius: 100%;
+  border-color: whitesmoke;
 }
 
 .container {
@@ -28,18 +24,67 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  background-image: url(./people-jpg);
 }
 .content {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
+  font-size: x-large;
   gap: 30px;
 }
 
 #btnReestablecer {
-  border-radius: 15px;
+  align-content: center;
+  align-items: center;
+  border-radius: 100%;
   border: 2px;
-  height: 45px;
-  width: 150px;
-  background-color: silver;
+  height: 100px;
+  width: 200px;
+  background-color: grey;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: x-large;
+  cursor: pointer;
+}
+#btnReestablecer:hover {
+  animation: buttonSpace 5s infinite ease-in-out;
+  color: black;
+  background-color: white;
+}
+
+@keyframes h1Hover {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes buttonSpace {
+  0% {
+    transform: scale(1) rotateX(0deg);
+  }
+  25% {
+    transform: scale(1.1) rotateX(50deg);
+  }
+  50% {
+    transform: scale(1.2) rotateX(100deg);
+  }
+  75% {
+    transform: scale(1.1) rotateX(150deg);
+  }
+  100% {
+    transform: scale(1) rotateX(0deg);
+  }
 }
