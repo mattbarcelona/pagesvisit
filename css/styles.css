@@ -16,6 +16,14 @@ h1:hover {
 fieldset {
   border-radius: 100%;
   border-color: whitesmoke;
+  height: 300px;
+}
+
+audio {
+  position: relative;
+  float: bottom;
+  background-color: transparent;
+  height: 300px;
 }
 
 .container {
